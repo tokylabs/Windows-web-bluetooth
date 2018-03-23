@@ -1,0 +1,24 @@
+{
+        "name": "tokylabsElectron",
+        "dependencies": {
+                "jquery": "^3.3.1",
+                "noble-uwp": "^0.6.1",
+                "webbluetooth": "^1.0.4"
+        },
+        "version": "0.0.2",
+        "build": {
+        		"asar" : true, 
+                "electronVersion": "1.7.0",
+                "win": {
+				  "target": [
+				    {
+				      "target": "nsis",
+				      "arch": [
+				        "x64",
+				        "ia32"
+				      ]
+				    }
+				  ]
+				}
+        }
+}
